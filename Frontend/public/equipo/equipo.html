@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MI EQUIPO - Fantasy Fútbol Universe</title>
+    <link rel="stylesheet" href="style-equipo.css">
+    <link rel="icon" href="/public/imagenes/logo png temporada 5.png">
+</head>
+<body class="body-inicio">
+    <header>
+        <div class="header">
+            <img src="/public/imagenes/logo png temporada 5.png" class="img-header" alt="Logo Fantasy Fútbol Universe">
+            <h1 class="h1-header">Fantasy Fútbol Universe</h1>
+            <a href="/public/inicio/inicio.html" class="btn-header">Inicio</a>
+            <a href="/public/equipo/equipo.html" class="btn-header">Mi equipo</a>
+            <a href="/public/mercado/mercado.html" class="btn-header">Mercado</a>
+            <a href="/public/clasificacion/clasificacion.html" class="btn-header">Clasificación</a>
+            <a href="/public/login/inicio-sesion.html" class="btn-header">Cerrar sesión</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="estadisticas">
+            <div class="estadisticas2">
+                <span>Presupuesto Restante</span>
+                <strong id="presupuesto">10.0M €</strong>
+            </div>
+            <div class="estadisticas2">
+                <span>Valor del Equipo</span>
+                <strong id="valor-equipo">90.0M €</strong>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="pitch">
+                <div class="medio-circulo"></div>
+                <div class="penalti-area"></div>
+
+                
+
+                <div id="nivel1" class="position pivot">
+                    <p id="nivel1-texto" class="nombre-jugador-nivel1"></p>
+                    <div class="player-icon">+</div>
+                    <span class="niveles-font">Nivel 1</span>
+                </div>
+
+                
+                <div id="alas" class="alas">
+                    <div id="nivel2" class="position ala">
+                        <div class="position-ala">
+                            <p id="nivel2-texto" class="nombre-jugador-nivel2"></p>
+                            <div class="player-icon">+</div>
+                            <span class="niveles-font">Nivel 2</span>
+                        </div> 
+                    </div>
+                    <div id="nivel3" class="position ala">
+                        <div class="position-ala">
+                            <p id="nivel3-texto" class="nombre-jugador-nivel3"></p>
+                            <div class="player-icon">+</div>
+                            <span class="niveles-font">Nivel 3</span>
+                        </div> 
+                    </div>
+                </div>
+
+                <div id="nivel4" class="position cierre">
+                    <p id="nivel4-texto" class="nombre-jugador-nivel4"></p>
+                    <div class="player-icon">+</div>
+                    <span class="niveles-font">Nivel 4</span>
+                </div>
+
+                <div id="nivelPortero" class="position portero">
+                    <p id="nivelPortero-texto" class="nombre-jugador-nivelPortero"></p>
+                    <div class="player-icon">+</div>
+                    <span class="niveles-font">Nivel Portero</span>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <div id="nivel5" class="extra-slot">
+                    <div class="player-icon">+</div>
+                    <span class="niveles-font">Nivel 5</span>
+                </div>
+                <div id="nivel6" class="extra-slot">
+                    <div class="player-icon">+</div>
+                    <span class="niveles-font">Nivel 6</span>
+                </div>
+                <div id="nivel7" class="extra-slot">
+                    <div class="player-icon">+</div>
+                    <span class="niveles-font">Nivel 7</span>
+                </div>
+            </aside> 
+        </div>
+
+        <div id="desplegable-fondo" class="fondo-oscuro"></div>
+
+        <div id="desplegable-jugadores" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 1 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p id="cristian" class="nombre">Cristian</p>
+                    <p class="valor-jugador">40M €</p>
+                    <button id="nombre-es-cristian" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p id="javitorre" class="nombre">Javi Torre</p>
+                    <p class="valor-jugador">39M €</p>
+                    <button id="nombre-es-javitorre" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Salvi</p>
+                    <p class="valor-jugador">38M €</p>
+                    <button id="nombre-es-salvi" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Mariete</p>
+                    <p class="valor-jugador">37M €</p>
+                    <button id="nombre-es-mariete" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Tatín</p>
+                    <p class="valor-jugador">36M €</p>
+                    <button id="nombre-es-tatin" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jose M</p>
+                    <p class="valor-jugador">35M €</p>
+                    <button id="nombre-es-josem" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Xexu</p>
+                    <p class="valor-jugador">34M €</p>
+                    <button id="nombre-es-xexu" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jose Adri</p>
+                    <p class="valor-jugador">33M €</p>
+                    <button id="nombre-es-joseadri" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Alejandro</p>
+                    <p class="valor-jugador">32M €</p>
+                    <button id="nombre-es-alejandro" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Ezequiel</p>
+                    <p class="valor-jugador">31M €</p>
+                    <button id="nombre-es-ezequiel" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegable" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadores-nivel2" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 2 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Vazquez</p>
+                    <p class="valor-jugador">25M €</p>
+                    <button id="nombre-es-vazquez" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Carlotor</p>
+                    <p class="valor-jugador">24M €</p>
+                    <button id="nombre-es-carlotor" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Joaquín</p>
+                    <p class="valor-jugador">23M €</p>
+                    <button id="nombre-es-joaquin" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Adri C</p>
+                    <p class="valor-jugador">22.5M €</p>
+                    <button id="nombre-es-adric" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Pedro</p>
+                    <p class="valor-jugador">22M €</p>
+                    <button id="nombre-es-pedro" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Carlos Z</p>
+                    <p class="valor-jugador">21.5M €</p>
+                    <button id="nombre-es-carlosz" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Dani G</p>
+                    <p class="valor-jugador">21M €</p>
+                    <button id="nombre-es-danig" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Aarón</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-aaron" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jose Mateo</p>
+                    <p class="valor-jugador">19.5M €</p>
+                    <button id="nombre-es-josemateo" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Via</p>
+                    <p class="valor-jugador">19M €</p>
+                    <button id="nombre-es-via" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivel2" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadoresNivel3" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 3 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Pollo</p>
+                    <p class="valor-jugador">18M €</p>
+                    <button id="nombre-es-pollo" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Juanmi</p>
+                    <p class="valor-jugador">17.5M €</p>
+                    <button id="nombre-es-juanmi" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jesus A</p>
+                    <p class="valor-jugador">17M €</p>
+                    <button id="nombre-es-jesusa" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Abde</p>
+                    <p class="valor-jugador">16.5M €</p>
+                    <button id="nombre-es-abde" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Ruben Lobo</p>
+                    <p class="valor-jugador">16M €</p>
+                    <button id="nombre-es-rubenlobo" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jesús Torrejón</p>
+                    <p class="valor-jugador">15.5M €</p>
+                    <button id="nombre-es-jesustorrejon" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Kapri</p>
+                    <p class="valor-jugador">15M €</p>
+                    <button id="nombre-es-kapri" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Luis</p>
+                    <p class="valor-jugador">14.5M €</p>
+                    <button id="nombre-es-luis" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Millán</p>
+                    <p class="valor-jugador">14M €</p>
+                    <button id="nombre-es-millan" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jairo</p>
+                    <p class="valor-jugador">13.5M €</p>
+                    <button id="nombre-es-jairo" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivel3" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadoresNivel4" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 4 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Aitor</p>
+                    <p class="valor-jugador">13M €</p>
+                    <button id="nombre-es-aitor" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jorge</p>
+                    <p class="valor-jugador">12.5M €</p>
+                    <button id="nombre-es-jorge1" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Ivan</p>
+                    <p class="valor-jugador">12M €</p>
+                    <button id="nombre-es-ivan" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Miguel R</p>
+                    <p class="valor-jugador">11.5M €</p>
+                    <button id="nombre-es-miguelr" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Cristian D</p>
+                    <p class="valor-jugador">11M €</p>
+                    <button id="nombre-es-cristiand" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">David R</p>
+                    <p class="valor-jugador">10.5M €</p>
+                    <button id="nombre-es-davidr" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Nandi</p>
+                    <p class="valor-jugador">10M €</p>
+                    <button id="nombre-es-nandi" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Javimandy</p>
+                    <p class="valor-jugador">9.5M €</p>
+                    <button id="nombre-es-javimandy" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Enrique</p>
+                    <p class="valor-jugador">9M €</p>
+                    <button id="nombre-es-enrique" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Mario Lobo</p>
+                    <p class="valor-jugador">8.5M €</p>
+                    <button id="nombre-es-mariolobo" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivel4" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadoresNivel5" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 5 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Periko</p>
+                    <p class="valor-jugador">9M €</p>
+                    <button id="nombre-es-periko" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Koti</p>
+                    <p class="valor-jugador">8.8M €</p>
+                    <button id="nombre-es-koti" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Ian</p>
+                    <p class="valor-jugador">8.5M €</p>
+                    <button id="nombre-es-ian" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Manu</p>
+                    <p class="valor-jugador">8.2M €</p>
+                    <button id="nombre-es-manu" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Manuel C</p>
+                    <p class="valor-jugador">8M €</p>
+                    <button id="nombre-es-manuelc" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Tuba</p>
+                    <p class="valor-jugador">7.8M €</p>
+                    <button id="nombre-es-tuba" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Juanmi C</p>
+                    <p class="valor-jugador">7.5M €</p>
+                    <button id="nombre-es-juanmic" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Victor</p>
+                    <p class="valor-jugador">7.2M €</p>
+                    <button id="nombre-es-victor" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Hugo</p>
+                    <p class="valor-jugador">7M €</p>
+                    <button id="nombre-es-hugo" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Dani B</p>
+                    <p class="valor-jugador">6.5M €</p>
+                    <button id="nombre-es-danib" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivel5" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadoresNivel6" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 6 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Matias</p>
+                    <p class="valor-jugador">6M €</p>
+                    <button id="nombre-es-matias" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Adrikai</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-adrikai" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Dario</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-darilox" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Javi Saucedo</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-javisaucedo" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Lagostena</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-lagostena" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">David</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-david" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Alvaro</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-alvaro" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Toni</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-toni" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Dani</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-dani" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jorge</p>
+                    <p class="valor-jugador">2M €</p>
+                    <button id="nombre-es-jorge" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivel6" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadoresNivel7" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL 7 DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Samuel</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-samuel" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Andrés</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-andres" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Josema</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-josema" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Hiu</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-hiu" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Josete</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-josete" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Mateo</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-mateo" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Manopla</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-manopla" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Marco</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-marco" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Ale</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-ale" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Sergio P</p>
+                    <p class="valor-jugador">1M €</p>
+                    <button id="nombre-es-sergiop" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivel7" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div id="desplegable-jugadoresNivelPortero" class="desplegable-jugadores">
+            <h1>JUGADORES NIVEL PORTERO DISPONIBLES</h1>
+            <div class="lista-jugadores">
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Diego G</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-diegog" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Luisgra</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-luisgra" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Guty</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-guty" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Pablo Ramos</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-pabloramos" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Dani</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-daniP" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Rafa</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-rafa" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Lisandro</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-lisandro" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Dario</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-darioP" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Yerai</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-yerai" class="boton-fichar">FICHAR</button>
+                </div>
+                <div class="jugadores-nivel1">
+                    <p class="nombre">Jesuli</p>
+                    <p class="valor-jugador">20M €</p>
+                    <button id="nombre-es-jesuli" class="boton-fichar">FICHAR</button>
+                </div>
+            </div>
+
+            <div id="x-desplegableNivelPortero" class="x-desplegable">
+                <p>X</p>
+            </div>
+        </div>
+
+        
+        
+
+
+
+
+
+
+
+    </main>
+
+    <script src="equipo.js"></script>
+
+</body>
+</html>

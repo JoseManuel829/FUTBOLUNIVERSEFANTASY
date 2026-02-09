@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    background-color: #141a2e;
+    box-shadow: 0 0 5px #09f;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.img-header {
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+.h1-header {
+    color: white;
+}
+
+
+.btn-header {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 47%;
+    margin: 8px;
+    text-decoration: none;
+}
+
+
+.btn-header:hover {
+    text-decoration: underline;
+}
+
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.body-inicio {
+    background-color: #0b0f1a;
+    min-height: 100vh;
+}
+
+
+
+/* ---------------------------- */
+
+
+.contenedor-clasificacion {
+    background: #141a2e;
+    position: relative;
+    top: 45px;
+    width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px #09f;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-clasificacion {
+    display: flex;
+    gap: 300px;
+    margin-bottom: 20px;
+}
+
+.info-clasificacion p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.usuarios {
+    background: white;
+    border-radius: 12px;
+    width: 950px;
+    height: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.usuarios-textos {
+    display: grid;
+    grid-template-columns: 350px 250px 250px;
+    gap: 20px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.usuarios-textos p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.usuarios-nombre {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    left: 35px;
+}
+
+.usuarios-puntos, .usuarios-posicion {
+    text-align: center;
+    flex: 0 0 250px;
+}
+
+.usuarios-puntos {
+    position: relative;
+    right: 20px;
+}
+
+.usuarios-posicion {
+    position: relative;
+    left: 100px;
+}

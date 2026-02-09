@@ -1,0 +1,575 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.header {
+    background-color: #141a2e;
+    box-shadow: 0 0 5px #09f;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.img-header {
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+.h1-header {
+    color: white;
+}
+
+
+.btn-header {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 47%;
+    margin: 8px;
+    text-decoration: none;
+}
+
+
+.btn-header:hover {
+    text-decoration: underline;
+}
+
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.body-inicio {
+    background-color: #0b0f1a;
+    min-height: 100vh;
+}
+
+
+
+/* ---------------------------- */
+
+
+
+
+
+:root {
+    --pitch-green: #2e7d32;
+    --pitch-line: rgba(255, 255, 255, 0.6);
+    --primary-blue: #1a237e;
+    --accent-gold: #ffd700;
+    --bg-dark: #121212;
+}
+
+
+
+
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+
+.estadisticas2 {
+    background: #141a2e;
+    padding: 15px 15px;
+    border-radius: 12px;
+    border-bottom: 4px solid var(--accent-gold);
+    text-align: center;
+    flex: 1;
+}
+
+
+.estadisticas2 span {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+
+.estadisticas2 strong {
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+
+.game-area {
+    display: flex;
+    gap: 30px;
+}
+
+
+.pitch {
+    position: relative;
+    flex: 2;
+    background-color: var(--pitch-green);
+    height: 600px;
+    border-radius: 15px;
+    border: 5px solid var(--accent-gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+
+.pitch::after {
+    content: '';
+    position: absolute;
+    top: 50%; width: 100%; height: 2px;
+    background: var(--pitch-line);
+}
+
+
+.penalti-area {
+    position: absolute;
+    bottom: -10px;
+    width: 200px;
+    height: 100px;
+    border: 2px solid var(--pitch-line);
+    border-radius: 100px 100px 0 0;
+}
+
+
+.position, .extra-slot {
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.position {
+    position: relative;
+    bottom: 85px;
+}
+
+#nivel1 {
+    position: relative;
+    top: -30px;
+}
+
+#alas {
+    position: relative;
+    top: 30px
+}
+
+
+.position:hover, .extra-slot:hover {
+    transform: scale(1.1);
+}
+
+
+.player-icon {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-bottom: 8px;
+}
+
+
+.alas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 300px;
+}
+
+.position-ala {
+    padding: 15px 15px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+}
+
+
+.sidebar {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.extra-slot {
+    background: #141a2e;
+    height: 180px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ffd700;
+}
+
+
+.extra-slot .player-icon {
+    background: white;
+    color: #666;
+}
+
+.extra-slot span {
+    color: white;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+
+.modal-content {
+    background-color: #252525;
+    margin: 10% auto;
+    padding: 25px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+
+.player-item {
+    display: flex;
+    align-items: center;
+    background: #333;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+
+.btn-add {
+    background: var(--accent-gold);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.niveles-font {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fondo-oscuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* negro semitrasparente */
+    z-index: 2;
+    display: none;
+}
+
+
+.desplegable-jugadores {
+    position: relative;
+    background: #141a2e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1000px;
+    max-height: 600px;
+    position: absolute;
+    top: 200px;
+    left: 24%;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px #09f;
+    z-index: 2;
+    display: none;
+    overflow-y: auto; /* scroll vertical automatico */
+    overflow-x: hidden; /* sin scroll horizontal */
+}
+
+.desplegable-jugadores::-webkit-scrollbar {
+    width: 8px;
+}
+
+.desplegable-jugadores::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.desplegable-jugadores::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.desplegable-jugadores::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.x-desplegable {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    background: #f00;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.x-desplegable p {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.x-desplegable:hover {
+    transform: scale(1.1);
+}
+
+.desplegable-jugadores h1 {
+    color: white;
+}
+
+/* Desplegable de jugadores nivel 1 */
+
+.jugadores-nivel1 {
+    margin: 15px;
+    background: hsl(210, 100%, 40%);
+    height: 60px;
+    width: 960px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nombre {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.valor-jugador {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+.lista-jugadores {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-fichar {
+    height: 45px;
+    width: 110px;
+    font-size: 20px;
+    border-radius: 8px;
+    border-color: #1b2955;
+    position: absolute;
+    right: 50px;
+    font-weight: bold;
+}
+
+.boton-fichar:hover {
+    transform: scale(1.05);
+    background: grey;
+}
+
+.nombre-jugador-nivel1 {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.nombre-jugador-nivel2 {
+    font-size: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.nombre-jugador-nivel3 {
+    font-size: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.nombre-jugador-nivel4 {
+    font-size: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.nombre-jugador-nivelPortero {
+    font-size: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- */
+/* RESPONSIVE DESIGN       */
+/* ---------------------------- */
+
+@media (max-width: 768px) {
+    /* Ajustes del Header */
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn-header {
+        left: 0; /* Quitamos el desplazamiento lateral */
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .h1-header {
+        font-size: 1.5rem;
+    }
+
+    /* Estadísticas en columna o más pequeñas */
+    .estadisticas {
+        flex-direction: row; /* Mantenemos fila pero con texto más pequeño */
+        gap: 10px;
+    }
+
+    .estadisticas2 strong {
+        font-size: 1.1rem;
+    }
+
+    /* Área de juego: Sidebar pasa abajo del campo */
+    .game-area {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Ajuste del campo de fútbol */
+    .pitch {
+        height: 500px; /* Un poco más bajo en móvil */
+        flex: none;
+        width: 100%;
+    }
+
+    /* Los extremos (alas) necesitan menos espacio */
+    .alas {
+        gap: 80px; /* Reducimos el hueco entre Nivel 2 y 3 */
+    }
+
+    .player-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .niveles-font {
+        font-size: 14px;
+    }
+
+    /* Sidebar (Niveles 5, 6, 7) ahora en horizontal debajo del campo */
+    .sidebar {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .extra-slot {
+        height: 120px; /* Más bajos para que quepan en fila */
+        flex: 1;
+    }
+
+    /* El modal/desplegable de jugadores */
+    .desplegable-jugadores {
+        width: 95%; /* Que ocupe casi todo el ancho */
+        left: 2.5%;
+        top: 50px;
+        max-height: 80vh;
+    }
+
+    .jugadores-nivel1 {
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nombre, .valor-jugador {
+        position: static; /* Quitamos el absolute para que no se pisen */
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .boton-fichar {
+        position: static; /* Lo mismo para el botón */
+        width: 80px;
+        font-size: 14px;
+        height: 35px;
+    }
+}
+
+/* Ajuste extra para móviles muy pequeños (iPhone SE, etc.) */
+@media (max-width: 400px) {
+    .alas {
+        gap: 40px;
+    }
+    
+    .player-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MI EQUIPO - Fantasy Fútbol Universe</title>
+    <link rel="stylesheet" href="mercado.css">
+    <link rel="icon" href="/public/imagenes/logo png temporada 5.png">
+</head>
+<body class="body-inicio">
+    <header>
+        <div class="header">
+            <img src="/public/imagenes/logo png temporada 5.png" class="img-header" alt="Logo Fantasy Fútbol Universe">
+            <h1 class="h1-header">Fantasy Fútbol Universe</h1>
+            <a href="/public/inicio/inicio.html" class="btn-header">Inicio</a>
+            <a href="/public/equipo/equipo.html" class="btn-header">Mi equipo</a>
+            <a href="/public/mercado/mercado.html" class="btn-header">Mercado</a>
+            <a href="/public/clasificacion/clasificacion.html" class="btn-header">Clasificación</a>
+            <a href="/public/login/inicio-sesion.html" class="btn-header">Cerrar sesión</a>
+        </div>
+    </header>
+    <main class="main">
+
+        <!-- CONTENEDOR DE FILTROS -->
+        <div class="filtros-container">
+            <button class="filtro-btn active" data-nivel="portero">PORTERO</button>
+            <button class="filtro-btn" data-nivel="1">NIVEL 1</button>
+            <button class="filtro-btn" data-nivel="2">NIVEL 2</button>
+            <button class="filtro-btn" data-nivel="3">NIVEL 3</button>
+            <button class="filtro-btn" data-nivel="4">NIVEL 4</button>
+            <button class="filtro-btn" data-nivel="5">NIVEL 5</button>
+            <button class="filtro-btn" data-nivel="6">NIVEL 6</button>
+            <button class="filtro-btn" data-nivel="7">NIVEL 7</button>
+        </div>
+
+
+        <!-- JUGADORES NIVEL PORTERO -->
+
+        <h1 class="texto-nivel nivel-seccion" data-nivel="portero"> JUGADORES NIVEL DE PORTERO </h1>
+        <div class="fila-card nivel-seccion" data-nivel="portero">
+            <div id="diegog-mercado" class="card" data-jugador="diegog">
+                <div>
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Diego G</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="luisgra-mercado" class="card" data-jugador="luisgra">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Luisgra</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div class="card">
+                <div id="guty-mercado" class="" data-jugador="guty">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Guty</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div class="card">
+                <div id="pabloramos-mercado" class="" data-jugador="pabloramos">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Pablo Ramos</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div class="card">
+                <div id="rafa-mercado" class="" data-jugador="rafa">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Rafa</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="portero">
+            <div id="lisandro-mercado" class="card" data-jugador="lisandro">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Lisandro</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="dario-mercado" class="card" data-jugador="dario">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Dario</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="yerai-mercado" class="card" data-jugador="yerai">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Yerai</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="jesuli-mercado" class="card" data-jugador="jesuli">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jesuli</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="dani-mercado" class="card" data-jugador="dani">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Dani</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <!-- JUGADORES NIVELES 1 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="1">JUGADORES NIVELES 1</h1>
+        <div class="fila-card nivel-seccion" data-nivel="1">
+            <div id="cristian-mercado" class="card" data-jugador="cristian">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Cristian</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="javitorre-mercado" class="card" data-jugador="javitorre">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Javi Torre</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="salvi-mercado" class="card" data-jugador="salvi">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Salvi</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="mariete-mercado" class="card" data-jugador="mariete">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Mariete</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="tatin-mercado" class="card" data-jugador="tatin">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Tatín</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="1">
+            <div class="card" id="josem-mercado" data-jugador="josem">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jose M</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="xexu-mercado" class="card" data-jugador="xexu">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Xexu</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="joseadri-mercado" class="card" data-jugador="joseadri">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jose Adri</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="alejandro-mercado" class="card" data-jugador="alejandro">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Alejandro</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="ezequiel-mercado" class="card" data-jugador="ezequiel">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Ezequiel</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+
+        <!-- JUGADORES NIVELES 2 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="2">JUGADORES NIVELES 2</h1>
+        <div class="fila-card nivel-seccion" data-nivel="2">
+            <div id="vazquez-mercado" class="card" data-jugador="vazquez">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Vazquez</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="carlotor-mercado" class="card" data-jugador="calotor">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Carlotor</p>
+                <p  class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="joaquin-mercado" class="card" data-jugador="joaquin">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Joaquín</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="adric-mercado" class="card" data-jugador="adric">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Adri C</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="pedro-mercado" class="card" data-jugador="pedro">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Pedro</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="2">
+            <div id="carlosz-mercado" class="card" data-jugador="carlosz">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Carlos Z</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="danig-mercado" class="card" data-jugador="danig">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Dani G</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="aaron-mercado" class="card" data-jugador="aaron">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Aarón</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="josemateo-mercado" class="card" data-jugador="josemateo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jose Mateo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="via-mercado" class="card" data-jugador="via">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Via</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+
+        <!-- JUGADORES NIVELES 3 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="3">JUGADORES NIVELES 3</h1>
+        <div class="fila-card nivel-seccion" data-nivel="3">
+            <div id="pollo-mercado" class="card" data-jugador="pollo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Pollo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="juanmi-mercado" class="card" data-jugador="juanmi">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Juanmi</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="jesusa-mercado" class="card" data-jugador="jesusa">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jesus A</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="abde-mercado" class="card" data-jugador="abde">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Abde</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="rubenlobo-mercado" class="card" data-jugador="rubenlobo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Ruben Lobo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="3">
+            <div id="jesustorrejon-mercado" class="card" data-jugador="jesustorrejon">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jesús Torrejón</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="kapri-mercado" class="card" data-jugador="kapri">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Kapri</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="luis-mercado" class="card" data-jugador="luis">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Luis</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="millan-mercado" class="card" data-jugador="millan">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Millán</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="jairo-mercado" class="card" data-jugador="jairo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jairo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <!-- JUGADORES NIVELES 4 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="4">JUGADORES NIVELES 4</h1>
+        <div class="fila-card nivel-seccion" data-nivel="4">
+            <div id="aitor-mercado" class="card" data-jugador="aitor">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Aitor</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="jorge-mercado" class="card" data-jugador="jorge">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jorge</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="ivan-mercado" class="card" data-jugador="ivan">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Ivan</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="miguelr-mercado" class="card" data-jugador="miguelr">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Miguel R</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="cristiand-mercado" class="card" data-jugador="cristiand">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Cristian D</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="4">
+            <div id="davidr-mercado" class="card" data-jugador="davidr">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">David R</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="nandi-mercado" class="card" data-jugador="nandi">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Nandi</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="javimandy-mercado" class="card" data-jugador="javimandy">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Javimandy</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="enrique-mercado" class="card" data-jugador="enrique">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Enrique</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="mariolobo-mercado" class="card" data-jugador="mariolobo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Mario Lobo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+
+        <!-- JUGADORES NIVELES 5 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="5">JUGADORES NIVELES 5</h1>
+        <div class="fila-card nivel-seccion" data-nivel="5">
+            <div id="periko-mercado" class="card" data-jugador="periko">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Periko</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="koti-mercado" class="card" data-jugador="koti">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Koti</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="ian-mercado" class="card" data-jugador="ian">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Ian</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="manu-mercado" class="card" data-jugador="manu">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Manu</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="manuelc-mercado" class="card" data-jugador="manuelc">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Manuel C</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="5">
+            <div class="card" data-jugador="tuba" id="tuba-mercado">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Tuba</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="juanmic-mercado" class="card" data-jugador="juanmic">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Juanmi C</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="victor-mercado" class="card" data-jugador="victor">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Victor</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="hugo-mercado" class="card" data-jugador="hugo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Hugo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="danib-mercado" class="card" data-jugador="danib">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Dani B</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+
+        <!-- JUGADORES NIVELES 6 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="6">JUGADORES NIVELES 6</h1>
+        <div class="fila-card nivel-seccion" data-nivel="6">
+            <div id="matias-mercado" class="card" data-jugador="matias">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Matias</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="adrikai-mercado" class="card" data-jugador="adrikai">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Adrikai</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="dario-mercado" class="card" data-jugador="dario">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Dario</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="javisaucedo-mercado" class="card" data-jugador="javisaucedo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Javi Saucedo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="lagostena-mercado" class="card" data-jugador="lagostena">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Lagostena</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="6">
+            <div id="david-mercado" class="card" data-jugador="david">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">David</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="alvaro-mercado" class="card" data-jugador="alvaro">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Alvaro</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="toni-mercado" class="card" data-jugador="toni">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Toni</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="dani-mercado" class="card" data-jugador="dani">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Dani</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="jorge-mercado" class="card" data-jugador="jorge">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Jorge</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+
+        <!-- JUGADORES NIVELES 7 -->
+        <h1 class="texto-nivel nivel-seccion" data-nivel="7">JUGADORES NIVELES 7</h1>
+        <div class="fila-card nivel-seccion" data-nivel="7">
+            <div id="samuel-mercado" class="card" data-jugador="samuel">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Samuel</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="andres-mercado" class="card" data-jugador="andres">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Andrés</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="josema-mercado" class="card" data-jugador="josema">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Josema</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="hiu-mercado" class="card" data-jugador="hiu">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Hiu</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="josete-mercado" class="card" data-jugador="josete">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Josete</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+        <div class="fila-card nivel-seccion" data-nivel="7">
+            <div id="mateo-mercado" class="card" data-jugador="mateo">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Mateo</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="manopla-mercado" class="card" data-jugador="manopla">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Manopla</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="marco-mercado" class="card" data-jugador="marco">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Marco</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="ale-mercado" class="card" data-jugador="ale">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Ale</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+
+            <div id="sergiop-mercado" class="card" data-jugador="sergiop">
+                <div class="">
+                    <img class="circulo-foto" src="/public/imagenes/perfil.png" alt="Foto de Perfil del Jugador">
+                </div>
+                <p class="nombre-text">Sergio P</p>
+                <p class="puntos-text">PUNTOS TOTALES: 10P</p>
+                <p class="valor-text">VALOR ACTUAL: 20M €</p>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+        <div id="desplegable-fondo-mercado" class="fondo-oscuro"></div>
+        <div id="cardbk" class="desplegable-jugadores-mercado" style="display: none;">
+            <div id="x-desplegable" class="x-desplegable" data-close>
+                <p>X</p>
+            </div>
+            <img id="foto-mercado" class="circulo-foto-mercado" src="/public/public/imagenes/perfil.png" alt="">
+            <h1 id="nombre-mercado" class="nombre-jugador-mercado"></h1>
+            <div class="contenedor-estadisticas">
+                <div class="columna1">
+                    <p id="goles" class="estadisticas-mercado">GOLES: 0</p>
+                    <p id="asistencias" class="estadisticas-mercado">ASISTENCIAS: 0</p>
+                    <p id="amarillas" class="estadisticas-mercado">TARJETAS AMARILLAS: 0</p>
+                    <p id="rojas" class="estadisticas-mercado">TARJETAS ROJAS: 0</p>
+                </div>
+                <div class="columna2">
+                    <p id="partidos" class="estadisticas-mercado">PARTIDOS JUGADOS: 0</p>
+                    <p id="valor-actual" class="estadisticas-mercado">VALOR ACTUAL: 20M</p>
+                    <p id="valor-min" class="estadisticas-mercado">VALOR MAS BAJO: 0M</p>
+                    <p id="valor-max" class="estadisticas-mercado">VALOR MÁS ALTO: 20M</p>
+                </div>
+            </div>
+            <div class="texto-puntos">
+                <p id="puntos-totales">PUNTOS TOTALES: 0</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        </div>
+        
+        
+
+
+
+
+
+
+
+    </main>
+
+    <script src="mercado.js"></script>
+
+</body>
+</html>
