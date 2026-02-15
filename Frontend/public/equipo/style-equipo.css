@@ -103,6 +103,27 @@ html, body {
     color: #fff;
 }
 
+.contenedor-btn-confirmar {
+    
+}
+
+.btn-confirmar {
+    background: #141a2e;
+    padding: 10px 10px;
+    border-radius: 12px;
+    border-bottom: 4px solid var(--accent-gold);
+    text-align: center;
+    flex: 1;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-confirmar:hover {
+    color: grey;
+}
+
 
 .game-area {
     display: flex;
@@ -448,9 +469,13 @@ html, body {
     font-weight: bold;
 }
 
-
-
-
+.nombre-jugador-nivel5-6-7 {
+    font-size: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: white;
+}
 
 
 
